@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Plancha 1 - Hero</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,900&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 overflow-x-hidden">
+
+    <section class="relative w-full h-screen bg-[#071426]">
+
+        <div class="absolute inset-0 z-0 flex justify-end">
+            <div class="w-full md:w-3/4 h-full bg-cover bg-center"
+                style="background-image: url('images/diputado.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#071426] via-[#071426]/90 to-transparent"></div>
+        </div>
+
+        <nav class="absolute top-0 left-0 w-full z-20 flex items-center px-6 md:px-16 py-8">
+            <div class="flex items-center gap-4">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                    <img src="URL_DEL_LOGO_AQUI" alt="Logo" class="w-full h-full object-contain rounded-full">
+                </div>
+                <div>
+                    <h1 class="text-white text-xl md:text-2xl font-bold leading-tight">PLANCHA 1</h1>
+                    <p class="text-gray-400 text-[0.60rem] tracking-[0.2em] uppercase mt-1">Colegio Dominicano de
+                        Cirujanos - 2026 - 2028</p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="relative z-10 h-full flex items-center px-6 md:px-16 w-full">
+            <div class="max-w-2xl mt-12 md:mt-20">
+
+                <div
+                    class="inline-block border border-[#facc15] rounded-full px-4 py-1.5 mb-6 bg-white/5 backdrop-blur-sm">
+                    <span class="text-[#facc15] text-[0.70rem] font-bold tracking-widest uppercase">El CDC Somos
+                        Todos</span>
+                </div>
+
+                <h2 class="text-5xl md:text-7xl font-black text-white leading-[1.05] italic mb-6">
+                    Por el <span class="text-[#facc15] relative inline-block">Rescate
+                        <span class="absolute left-0 -bottom-1.5 w-full h-2 bg-[#4878d6]"></span>
+                    </span><br>
+                    Institucional
+                </h2>
+
+                <p class="text-gray-300 text-sm md:text-base max-w-[400px] mb-10 leading-relaxed font-normal">
+                    Transparencia, formación académica y representación real para el Colegio Dominicano de Cirujanos.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#"
+                        class="bg-[#1e5ce6] hover:bg-blue-700 transition text-white text-sm font-semibold rounded-full px-8 py-3.5 flex items-center gap-2">
+                        Conoce la plancha <span class="text-lg leading-none">&rarr;</span>
+                    </a>
+                    <a href="#"
+                        class="bg-transparent border border-gray-400 hover:border-white transition text-white text-sm font-semibold rounded-full px-8 py-3.5">
+                        Nuestras propuestas
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="absolute bottom-6 right-6 md:bottom-10 md:right-10 z-20">
+            <img src="URL_VOTA_1_AQUI" alt="Vota 1" class="h-12 object-contain">
+        </div>
+
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="w-full bg-white py-20 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Columna Izquierda: Imagen y Cuadro Flotante -->
+            <div class="relative w-full max-w-md mx-auto lg:mx-0">
+                <!-- Reemplaza con la imagen real de tu equipo -->
+                <img src="images/team.png" alt="Equipo de cirujanos"
+                    class="w-96 h-96 rounded-[2rem] object-cover shadow-lg">
+
+                <!-- Cuadro flotante azul oscuro -->
+                <div
+                    class="absolute -bottom-6 left-4 md:-left-8 bg-[#071426] text-white p-6 rounded-2xl shadow-xl w-64">
+                    <!-- Pequeña línea amarilla superior -->
+                    <div class="w-8 h-1 bg-[#facc15] mb-3 rounded-full"></div>
+                    <p class="font-bold text-sm leading-snug">Mujeres y hombres con una visión renovada para el CDC</p>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Texto y Lista -->
+            <div class="flex flex-col lg:pl-8 mt-10 lg:mt-0">
+
+                <!-- Subtítulo -->
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="w-8 h-[2px] bg-[#4878d6]"></span>
+                    <span class="text-[#4878d6] text-[0.65rem] font-bold tracking-[0.2em] uppercase">Sobre
+                        Nosotros</span>
+                </div>
+
+                <!-- Título -->
+                <h2 class="text-4xl md:text-5xl font-black text-[#071426] mb-6 tracking-tight">Nuestra misión</h2>
+
+                <!-- Párrafos -->
+                <div class="text-gray-600 space-y-5 text-sm md:text-[0.95rem] leading-relaxed mb-8">
+                    <p>Somos un equipo de cirujanos comprometidos con transformar el Colegio Dominicano de Cirujanos en
+                        una institución moderna, transparente y verdaderamente al servicio de su membresía.</p>
+                    <p>Trabajamos por un gremio fuerte y unido, donde cada colega encuentre formación académica de
+                        excelencia, representación real ante las autoridades y una defensa firme de sus derechos y
+                        honorarios profesionales.</p>
+                </div>
+
+                <!-- Lista de Checkmarks -->
+                <ul class="space-y-4">
+                    <!-- Item 1 -->
+                    <li class="flex items-center gap-4">
+                        <div class="w-6 h-6 rounded-full bg-[#fdf5d3] flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3.5 h-3.5 text-[#d97706]" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-[#071426] font-bold text-sm">Instituciones sólidas y transparentes</span>
+                    </li>
+                    <!-- Item 2 -->
+                    <li class="flex items-center gap-4">
+                        <div class="w-6 h-6 rounded-full bg-[#fdf5d3] flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3.5 h-3.5 text-[#d97706]" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-[#071426] font-bold text-sm">Formación académica continua y de
+                            excelencia</span>
+                    </li>
+                    <!-- Item 3 -->
+                    <li class="flex items-center gap-4">
+                        <div class="w-6 h-6 rounded-full bg-[#fdf5d3] flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3.5 h-3.5 text-[#d97706]" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-[#071426] font-bold text-sm">Defensa de los derechos del cirujano
+                            dominicano</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full bg-[#f8fafc] font-sans">
+        <div class="container mx-auto px-6 py-20 md:py-24">
+
+            <div class="mb-14">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="w-8 h-[2px] bg-[#4878d6]"></span>
+                    <span class="text-[#4878d6] text-[0.65rem] font-bold tracking-[0.2em] uppercase">Nuestros
+                        Valores</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-[#071426] tracking-tight max-w-lg leading-tight">
+                    Principios que guían cada decisión
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-[#e6eff8] p-8 rounded-[1.5rem] shadow-sm">
+                    <div class="bg-white w-12 h-12 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-[#071426]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 11.5v3m-1.5-1.5h3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#071426] mb-1">Transparencia</h3>
+                    <p class="text-[0.80rem] text-gray-500">en cada acción</p>
+                </div>
+
+                <div class="bg-[#e6eff8] p-8 rounded-[1.5rem] shadow-sm">
+                    <div class="bg-white w-12 h-12 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-[#071426]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#071426] mb-1">Respeto</h3>
+                    <p class="text-[0.80rem] text-gray-500">y unidad gremial</p>
+                </div>
+
+                <div class="bg-[#e6eff8] p-8 rounded-[1.5rem] shadow-sm">
+                    <div class="bg-white w-12 h-12 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-[#071426]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.825-3.003 12.083 12.083 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#071426] mb-1">Academia</h3>
+                    <p class="text-[0.80rem] text-gray-500">y formación continua</p>
+                </div>
+
+                <div class="bg-[#e6eff8] p-8 rounded-[1.5rem] shadow-sm">
+                    <div class="bg-white w-12 h-12 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-[#071426]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#071426] mb-1">Representación</h3>
+                    <p class="text-[0.80rem] text-gray-500">real y efectiva</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
