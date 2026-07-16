@@ -27,6 +27,49 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .ticker {
+            overflow: hidden;
+            position: relative;
+            background: #1e5ce6;
+            color: white;
+            padding: 0.6rem 0;
+        }
+
+        .ticker-track {
+            display: flex;
+            width: max-content;
+            animation: ticker-scroll 18s linear infinite;
+            will-change: transform;
+        }
+
+        .ticker-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-right: 1rem;
+            white-space: nowrap;
+        }
+
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        @keyframes ticker-scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
     </style>
 </head>
 
@@ -453,18 +496,22 @@
     </section>
 
     <!-- Cinta superior (Ticker) -->
-    <div
-        class="w-full bg-[#1e5ce6] text-white py-2 overflow-hidden flex whitespace-nowrap text-sm font-bold tracking-widest uppercase">
-        <div class="flex items-center gap-4">
-            <!-- Puedes multiplicar este bloque o usar animaciones CSS para el scroll infinito -->
-            <span>VOTA 1</span> <span class="text-[#facc15]">✓</span> <span>EL CDC SOMOS TODOS</span> <span
-                class="text-[#facc15]">✓</span>
-            <span>VOTA 1</span> <span class="text-[#facc15]">✓</span> <span>EL CDC SOMOS TODOS</span> <span
-                class="text-[#facc15]">✓</span>
-            <span>VOTA 1</span> <span class="text-[#facc15]">✓</span> <span>EL CDC SOMOS TODOS</span> <span
-                class="text-[#facc15]">✓</span>
-            <span>VOTA 1</span> <span class="text-[#facc15]">✓</span> <span>EL CDC SOMOS TODOS</span> <span
-                class="text-[#facc15]">✓</span>
+    <div class="ticker">
+        <div class="ticker-track">
+            <div class="ticker-group">
+                <span class="ticker-item"><span>VOTA 1</span><span class="text-[#facc15]">✓</span></span>
+                <span class="ticker-item"><span>EL CDC SOMOS TODOS</span><span class="text-[#facc15]">✓</span></span>
+                <span class="ticker-item"><span>TRANSPARENCIA</span><span class="text-[#facc15]">✓</span></span>
+                <span class="ticker-item"><span>REPRESENTACIÓN REAL</span><span class="text-[#facc15]">✓</span></span>
+                <span class="ticker-item"><span>FORMACIÓN ACADÉMICA</span><span class="text-[#facc15]">✓</span></span>
+            </div>
+            <div class="ticker-group" aria-hidden="true">
+                <span class="ticker-item"><span>VOTA 1</span><span class="text-[#facc15]">✓</span></span>
+                <span class="ticker-item"><span>EL CDC SOMOS TODOS</span><span class="text-[#facc15]">✓</span></span>
+                <span class="ticker-item"><span>TRANSPARENCIA</span><span class="text-[#facc15]">✓</span></span>
+                <span class="ticker-item"><span>REPRESENTACIÓN REAL</span><span class="text-[#facc15]">✓</span></span>
+                <span class="ticker-item"><span>FORMACIÓN ACADÉMICA</span><span class="text-[#facc15]">✓</span></span>
+            </div>
         </div>
     </div>
 
